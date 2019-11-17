@@ -34,9 +34,9 @@ namespace SecondApp
 
             AppInfo.ShowSettingsUI();
 
-            //var duration = TimeSpan.FromSeconds(10); //kui on vaja muuta vibratsiooni pikkust, järgmises reas sulgudesse panna kirja
-            //Vibration.Vibrate();
-            //await NavigateToBuilding();
+            var duration = TimeSpan.FromSeconds(10); //kui on vaja muuta vibratsiooni pikkust, järgmises reas sulgudesse panna kirja
+            Vibration.Vibrate();
+            await NavigateToBuilding();
 
         }
 
