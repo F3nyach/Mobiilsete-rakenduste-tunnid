@@ -1,0 +1,55 @@
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <Switch
+        android:text="Toggle flashlight button ->"
+        android:textSize="24dp"
+        android:layout_width="match_parent"
+        android:layout_height="50.0dp"
+        android:checked="false"
+        android:textOff="NO"
+        android:textOn="YES"
+        android:gravity="center"
+        android:id="@+id/switch1"
+        android:textStyle="normal"
+        android:textColor="#ffdd16fd" />
+    <Button
+        android:text="Press to get your location info"
+        android:layout_width="match_parent"
+        android:layout_height="50.0dp"
+        android:id="@+id/button1"
+        android:backgroundTint="#ff7fd4f7" />
+    <TextView
+        android:text="Your coordinates will appear here"
+        android:layout_width="match_parent"
+        android:layout_height="50.0dp"
+        android:id="@+id/textView1"
+        android:textIsSelectable="true"
+        android:focusable="true"
+        android:longClickable="true"
+        android:gravity="center"
+        android:textStyle="italic"
+        android:textSize="24dp"
+        android:textColor="#ff36d442" />
+    <Button
+        android:text="Press to get battery info"
+        android:layout_width="match_parent"
+        android:layout_height="50.0dp"
+        android:id="@+id/button2"
+        android:backgroundTint="#ffffc107" />
+    <TextView
+        android:text="Battery stats will appear here"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:id="@+id/textView2"
+        android:textColor="#fff71717"
+        android:textStyle="italic"
+        android:textSize="24dp" />
+</LinearLayout>
