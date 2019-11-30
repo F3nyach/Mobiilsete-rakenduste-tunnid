@@ -26,10 +26,16 @@ namespace ThirdApp
             "Bosnia and Herzegovina","Botswana","Bouvet Island","Brazil","British Indian Ocean Territory",
             "British Virgin Islands","Brunei","Bulgaria","Burkina Faso","Burundi"};
 
-            listView.Adapter = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleListItem1, countries);
-
-
+            listView.Adapter = new BasicAdapter(this, countries);
+            
+            listView.ItemClick += delegate (object sender, AdapterView.ItemClickEventArgs args)
+            {
+                Toast.MakeText(Application, ((TextView)args.View).Text, ToastLength.Short).Show();
+            };
         }
+
+
+
         public override void OnRequestPermissionsResult(int requestCode, string[] permissions, [GeneratedEnum] Android.Content.PM.Permission[] grantResults)
         {
             Xamarin.Essentials.Platform.OnRequestPermissionsResult(requestCode, permissions, grantResults);
